@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Game</h1>
+      <div id="start-screen">
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      <div id="quiz-screen" class="hidden">
+        <div id="question-text"></div>
+        <div id="answer-buttons">
+          <form id="quiz-form">
+            <label><input type="radio" name="answer" value="0" /> 0</label
+            ><br />
+            <label><input type="radio" name="answer" value="1" /> 1</label
+            ><br />
+            <label><input type="radio" name="answer" value="2" /> 2</label
+            ><br />
+            <label><input type="radio" name="answer" value="3" /> 3</label
+            ><br />
+            <button type="button" id="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="result-screen" class="hidden">
+        <h2>Quiz Completed!</h2>
+        <hr />
+        <p id="score-text"></p>
+        <h2 id="high-score"></h2>
+        <hr />
+        <h2>Feedback:</h2>
+        <p id="feedback1"></p>
+        <p id="feedback2"></p>
+        <button id="restart-btn">Try Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
