@@ -201,9 +201,13 @@ function showResults() {
 
 // You do not have to alter this function.
 function restartQuiz() {
+  console.log(wrongArray);
+  feedback1.innerHTML = ``;
+  feedback2.innerHTML = ``;
+  correctArray = [];
+  wrongArray = [];
   resultScreen.classList.add("hidden");
   startScreen.classList.remove("hidden");
-  console.log("Do something");
   startQuiz();
 }
 
